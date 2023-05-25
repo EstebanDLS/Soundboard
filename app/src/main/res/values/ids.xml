@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_Bass1" type="id" />
+    <item name="btn_Bass2" type="id" />
+    <item name="btn_Kicker" type="id" />
+</resources>

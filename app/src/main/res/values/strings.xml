@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TestApp</string>
     <string name="Mad_Libs">\t\t\tMad Libs</string>
+    <string name="Soundboard" />
 </resources>
