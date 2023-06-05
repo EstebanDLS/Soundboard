@@ -2,6 +2,7 @@ package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnGNote;
     private Button btnGSharp;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
         btnCSharp = findViewById(R.id.cSharp);
         btnDNote = findViewById(R.id.dNote);
         btnDSharp = findViewById(R.id.dSharp);
-        btnENote = findViewById(R.id.button8);
-        btnFNote = findViewById(R.id.button9);
-        btnFSharp = findViewById(R.id.button10);
-        btnGNote = findViewById(R.id.button11);
-        btnGSharp = findViewById(R.id.button12);
+        btnENote = findViewById(R.id.eNote);
+        btnFNote = findViewById(R.id.fNote);
+        btnFSharp = findViewById(R.id.fSharp);
+        btnGNote = findViewById(R.id.gNote);
+        btnGSharp = findViewById(R.id.gSharp);
 
         btnANote.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playGSharp() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.gsharp);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -115,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playGNote() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.gnote);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -128,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playFSpharp() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.fsharp);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -141,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playFNote() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.fnote);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -154,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playENote() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.enote);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -167,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playDSharp() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.dsharp);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -180,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playDNote() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.dnote);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -193,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playCSharp() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.csharp);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -206,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playCNote() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.cnote);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -219,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playBNote() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.bnote);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -232,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playASharp() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.asharp);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
@@ -245,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playANote() {
-        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.anote);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
