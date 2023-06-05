@@ -1,6 +1,8 @@
 package com.example.testapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,8 +42,217 @@ public class MainActivity extends AppCompatActivity {
 
         btnANote.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                playANote();
+            public void onClick(View v) {playANote();}
+        });
+
+        btnASharp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playASharp();}
+        });
+
+        btnBNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playBNote();}
+        });
+
+        btnCNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playCNote();}
+        });
+
+        btnCSharp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playCSharp();}
+        });
+
+        btnDNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playDNote();}
+        });
+
+        btnDSharp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playDSharp();}
+        });
+
+        btnENote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playENote();}
+        });
+
+        btnFNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playFNote();}
+        });
+
+        btnFSharp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playFSpharp();}
+        });
+
+        btnGNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playGNote();}
+        });
+
+        btnGSharp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {playGSharp();}
+        });
+    }
+
+    private void playGSharp() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playGNote() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playFSpharp() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playFNote() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playENote() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playDSharp() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playDNote() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playCSharp() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playCNote() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playBNote() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playASharp() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
+            }
+        });
+    }
+
+    private void playANote() {
+        MediaPlayer mp = MediaPlayer.create( this, R.raw.A);
+        mp.start();
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                mp.stop();
+                mp.release();
+                mp = null;
             }
         });
     }
