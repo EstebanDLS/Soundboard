@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnFSharp.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {playFSpharp();}
+            public void onClick(View view) {playFSharp();}
         });
 
         btnGNote.setOnClickListener(new View.OnClickListener() {
@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void playFSpharp() {
+    private void playFSharp() {
         MediaPlayer mp = MediaPlayer.create( this, R.raw.fsharp);
         mp.start();
         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
